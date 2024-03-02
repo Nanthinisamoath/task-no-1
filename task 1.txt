@@ -1,0 +1,141 @@
+package firstproject;
+
+public class number {
+
+	public static void main(String[] args) {
+		int n=10;
+		while(n<=50) {
+			System.out.println(n);
+			n++;
+		}
+	}
+
+}
+*********************************************************************************************
+package firstproject;
+
+import java.util.Scanner;
+
+public class num {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+	       System.out.print("Enter the input valuee: ");
+	           int num= scanner.nextInt();
+	           
+		if(num<=0)
+		{  
+		System.out.println( "The number is Negative.");  
+		}  
+		else if (num>=0)
+		{  
+		System.out.println( "The number is Positive.");  
+		}  
+		else  
+		{  
+		System.out.println("The number is zero.");  
+		}  
+		
+	}
+}
+
+************************************************************************************************
+package firstproject;
+import java .util.Scanner;
+
+public class Reverse {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+
+	       System.out.print("Enter the input valuee: ");
+	           int num= scanner.nextInt();
+    int rem= 0;
+    while(num>0)
+    {
+       rem=rem*10 + num%10;
+       num=num/10;
+    }
+	System.out.println("reverse valuee is : "+ rem);
+}
+    }	
+************************************************************************************************************
+class Smallest {
+    
+     public static void main(String[] args) 
+     {
+    	 Scanner scanner = new Scanner(System.in);
+         System.out.println("Enter three numbers:");
+         
+         double num1 = scanner.nextDouble();
+         double num2 = scanner.nextDouble();
+         double num3 = scanner.nextDouble();
+         
+         double smallest;
+
+         if (num1 <= num2 && num1 <= num3)
+         {
+             smallest = num1;
+         }
+         else if (num2 <= num1 && num2 <= num3)
+         {
+             smallest = num2;
+         } 
+         else 
+         {
+             smallest = num3;
+         }
+
+         System.out.println("The smallest number is: " + smallest);
+
+         scanner.close();
+     }
+ }
+**********************************************************************************************************
+package firstproject;
+import java.util.Scanner;
+
+public class discount {
+
+	public static void main(String[] args) {
+		    
+		        	       
+	Scanner scanner = new Scanner(System.in);
+
+		       System.out.print("Enter the purchase amount: ");
+		       
+		        double purchaseAmount = scanner.nextDouble();
+		        double discount = 0.0;
+		        if (purchaseAmount >= 500 && purchaseAmount <= 1000) 
+		        {
+		            discount = 0.1; // 10% discount
+		        } 
+		        else if (purchaseAmount >1000)
+		        {
+		            discount = 0.2; // 20% discount
+		        }
+		       double pAmount = purchaseAmount - (purchaseAmount * discount);
+		        
+		        System.out.println("Final payable amount after discount: Rs " + pAmount);
+		        
+		       scanner.close();
+		    }
+	}
+************************************************************************************************************************
+package firstproject;
+import java.util.Scanner;
+public class Patern {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("enter the no of pattern");
+		int n= scanner.nextInt();
+		for(int i= n; i >=1; i--) {
+			for(int j=n; j>=1; j--) {
+				System.out.print(Math.max(i, j));		
+			}
+		System.out.println();
+	}
+	}
+}
